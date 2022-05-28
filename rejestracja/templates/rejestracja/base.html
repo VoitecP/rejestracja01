@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>base template jo.</h1>
+
+    <div>
+        {{shedules}}
+    </div>
+
+    <br>
+    {% for shedule in shedules %}
+        <div>
+            {{shedule}}
+        </div>
+    {% endfor %}
+    <br>
+    <form>
+        <label for="day">Poniedziałek (aktywny)</label><br>
+        <input type="checkbox" id="day"> <br>
+        <label for="duration_time">Czas Wizyty</label><br>
+        <input type="'time" id="duration_time" min="00:05" max="03:00" required>   
+    </form>
+</body>
+</html>
